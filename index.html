@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </link>
+
+</head>
+
+
+<body>
+    <header>
+        <h1>Password Generator</h1>
+    </header>
+
+    <div style="border: solid 1px;background-color: rgb(253, 250, 246);">
+        <div>
+            <h2>Generate a Password</h2>
+        </div>
+
+        <hr>
+        <div class="securePassword;"></div>
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+        <br>
+
+
+<div class="checkboxes">
+    <label><input type="checkbox" id="cbox1" checked="checked"> UPPER-CASE alphabet (A-Z)</label>
+    <label><input type="checkbox" id="cbox2" checked="checked"> lower-case alphabet (a-z)</label>
+    <label><input type="checkbox" id="cbox3" checked="checked"> Numbers (0-9)</label>
+    <label><input type="checkbox" id="cbox4" checked="checked"> Commonly-Allowed Symbols</label>
+    <label><input type="checkbox" id="cbox5"> All Keyboard Symbols</label>
+  </div>
+</div>
+<div>
+  
+        <hr>
+        <button style="color: red;width: 10cm;" id="generate" onclick="myFunction()">Generate Password</button>
+
+        <button style="color: red;width: 10cm;" id="copy">Copy to Clipboard </button>
+    </div>
+
+
+</body>
+
+
+
+</html>
